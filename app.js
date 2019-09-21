@@ -65,7 +65,7 @@ function sqlSel(querySel)
 			//console.log(resul);
 		});
 
-		//console.log(resul);
+		console.log(resul);
 		return resul;
 	})
 }
@@ -127,3 +127,12 @@ function sqlDel(queryDel,queryParam)
 //===   			sqlDel('DELETE FROM author WHERE id = ?',[5]);					  ===
 //=======================================================================================
 //desconectar();
+
+
+
+module.exports.conectar = conectar;
+module.exports.desconectar = desconectar;
+module.exports.sqlSel = sqlSel;
+module.exports.sqlUp = sqlUp;
+module.exports.sqlIn = sqlIn;
+module.exports.sqlDel = sqlDel;
